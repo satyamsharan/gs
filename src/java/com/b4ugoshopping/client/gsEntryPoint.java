@@ -14,7 +14,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 /**
  * Main entry point.
  *
- * @author manu
+ * @author Satyam Sharan<satyam.sharan@hotmail.com>
  */
 public class gsEntryPoint implements EntryPoint {
 
@@ -31,12 +31,7 @@ public class gsEntryPoint implements EntryPoint {
     public void onModuleLoad() {
         final Label label = new Label("Hello, GWT!!!");
         final Button button = new Button("Click me!");
-        
-        button.addClickHandler(new ClickHandler() {
-            public void onClick(ClickEvent event) {
-                label.setVisible(!label.isVisible());
-            }
-        });
+
         
         RootPanel.get().add(button);
         RootPanel.get().add(label);
