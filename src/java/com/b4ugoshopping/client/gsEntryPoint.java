@@ -29,11 +29,8 @@ public class gsEntryPoint implements EntryPoint {
      * declares an implementing class as an entry-point
      */
     public void onModuleLoad() {
-        final Label label = new Label("Hello, GWT!!!");
-        final Button button = new Button("Click me!");
-
-        
-        RootPanel.get().add(button);
-        RootPanel.get().add(label);
+        Base base = new Base();
+        base.init();
+        RootPanel.get("baseDiv").add(base);
     }
 }
