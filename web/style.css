@@ -1,0 +1,24 @@
+/* 
+    Document   : style
+    Created on : Mar 2, 2013, 4:20:31 AM
+    Author     : Satyam Sharan<satyam.sharan@hotmail.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border:none;
+}
+
+#baseDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    border: 1px solid;
+}
