@@ -18,3 +18,9 @@ root {
     margin-right: 10px;
     cursor: pointer;}
 
+.Base-searchbar{
+    margin: auto auto;
+}
+.Base-searchbar input {
+    
+}
