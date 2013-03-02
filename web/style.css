@@ -11,19 +11,51 @@ root {
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     border:none;
+    color: #444444;
 }
-
+table,tbody,tr,td{
+    border: none;
+}
 #baseDiv{
     margin-left: auto;
     margin-right: auto;
     width: 960px;
-    
+    height: 1000px;
+    border: none;
 }
 
 .HeaderBar{
-    border: 1px solid;
-    width:960px;
+    width: 960px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 4px #888888;
+    padding: 8px;
+}
+
+.HeaderBar-hp{
+    float: right;
+}
+
+.HeaderBar-Link a{
+    text-decoration: none;
+    
+    color: #444444;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.HeaderBar-city{
+    color: #444444;
+    border: none;
+    background: transparent;
+    text-decoration: none;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
 }
