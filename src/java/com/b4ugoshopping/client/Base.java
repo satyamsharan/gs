@@ -5,6 +5,7 @@
 package com.b4ugoshopping.client;
 
 import com.b4ugoshopping.client.ui.HeaderBar;
+import com.b4ugoshopping.client.ui.Slider;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.user.client.History;
@@ -43,7 +44,10 @@ public class Base extends VerticalPanel{
     
     
     private void setPage(String token){
-        
+        if(token.equals("home") ) {
+            Slider slider = new Slider();
+            add(slider);
+        }
     }
     
 }
