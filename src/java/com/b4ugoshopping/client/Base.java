@@ -8,6 +8,7 @@ import com.b4ugoshopping.client.ui.HeaderBar;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.user.client.History;
+import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 /**
@@ -28,22 +29,24 @@ public class Base extends VerticalPanel{
         
         String tokenOnLoad=History.getToken();
         
+        
+        
+        HeaderBar headerBar = new HeaderBar();
+        add(headerBar);
+        
         if((tokenOnLoad==null)||tokenOnLoad.equals("")||tokenOnLoad.trim().equals("")){
             setPage("home");
         }else{
             setPage(tokenOnLoad);
         }
         
-        HeaderBar headerBar = new HeaderBar();
-        add(headerBar);
-        
-        setBorderWidth(1);
-        setCellWidth(headerBar, "100%");
     }
     
     
     private void setPage(String token){
-        
+        Image img=new Image("images/logo.png");
+        img.setStyleName("img");
+        add(img);
     }
     
 }
