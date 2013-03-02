@@ -53,6 +53,7 @@ public class HeaderBar extends VerticalPanel {
                 dialog.setStyleName("HeaderBar-dialog");
                 Button closeButton = new Button(
                         "Cancel", new ClickHandler() {
+                            @Override
                     public void onClick(ClickEvent event) {
                         dialog.hide();
                     }
