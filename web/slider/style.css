@@ -92,8 +92,8 @@ display:none;
 /*nishant code---testing*/
 
 .theme-default #slider {
-    width:400px; /* Make sure your images are the same size */
-    height:250px; /* Make sure your images are the same size */
+    width:810px; /* Make sure your images are the same size */
+    height:320px; /* Make sure your images are the same size */
 }
 .theme-pascal .slider-wrapper,
 .theme-orman .slider-wrapper {
