@@ -10,7 +10,6 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Hyperlink;
-import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 /**
@@ -18,8 +17,8 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  * @author Satyam Sharan<satyam.sharan@hotmail.com>
  */
 public class HeaderBar extends VerticalPanel {
-DialogBox dialog = new DialogBox();
 
+    private DialogBox dialog;
     public HeaderBar() {
         setStyleName("HeaderBar");
 
@@ -30,12 +29,15 @@ DialogBox dialog = new DialogBox();
 
         Button city = new Button("New Delhi");
 
+        dialog = new CityDialog();
+        
 
         hp.setStyleName("HeaderBar-hp");
         homeLink.setStyleName("HeaderBar-Link");
         postLink.setStyleName("HeaderBar-Link");
         city.setStyleName("HeaderBar-city");
-
+        dialog.setStyleName("HeaderBar-dialog");
+        
 
         city.setTitle("Click to Change");
 
@@ -44,33 +46,10 @@ DialogBox dialog = new DialogBox();
         hp.add(city);
 
         add(hp);
-
-        
-        VerticalPanel vp = new VerticalPanel();
-                
-                vp.add(new Label("Inside"));
-
-                Button closeButton = new Button(
-                        "Cancel", new ClickHandler() {
-                            @Override
-                    public void onClick(ClickEvent event) {
-                        dialog.hide();
-                    }
-                });
-                vp.add(closeButton);
-                dialog.setGlassEnabled(true);
-                dialog.setAnimationEnabled(true);
-                dialog.setGlassStyleName("HeaderBar-glassStyle");
-                dialog.setStyleName("HeaderBar-dialog");
-                dialog.setSize("300px", "150px");
-                dialog.add(vp);
-                
                 
         city.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-
-                
                 dialog.center();
                 dialog.show();
             }

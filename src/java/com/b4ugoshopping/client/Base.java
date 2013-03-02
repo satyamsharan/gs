@@ -5,11 +5,11 @@
 package com.b4ugoshopping.client;
 
 import com.b4ugoshopping.client.ui.HeaderBar;
+import com.b4ugoshopping.client.ui.Logo;
 import com.b4ugoshopping.client.ui.Slider;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
 import com.google.gwt.user.client.History;
-import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 /**
@@ -46,16 +46,16 @@ public class Base extends VerticalPanel{
     
     private void setPage(String token){
         
-        
-        
-        
-        
-        
-        
-        
         if(token.equals("home") ) {
+            
+            Logo logo = new Logo();
+            logo.setStyleName("Base-logo");
+            
+            
             Slider slider = new Slider();
             slider.setStyleName("Base-slider");
+            
+            add(logo);
             add(slider);
         }
     }
