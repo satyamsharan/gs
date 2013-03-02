@@ -11,9 +11,10 @@ import com.google.gwt.user.client.ui.Hyperlink;
  *
  * @author manu
  */
-public class Footer extends HorizontalPanel {
+public class FooterBar extends HorizontalPanel {
 
-    public Footer() {
+    public FooterBar() {
+        setStyleName("FooterBar");
         Hyperlink contactUs = new Hyperlink("Contact Us", "contact");
         Hyperlink copyright = new Hyperlink("Copyright", "copyright");
         contactUs.setStyleName("Footer-link");

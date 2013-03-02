@@ -4,7 +4,7 @@
  */
 package com.b4ugoshopping.client;
 
-import com.b4ugoshopping.client.ui.Footer;
+import com.b4ugoshopping.client.ui.FooterBar;
 import com.b4ugoshopping.client.ui.HeaderBar;
 import com.b4ugoshopping.client.ui.Logo;
 import com.b4ugoshopping.client.ui.SearchBar;
@@ -43,20 +43,19 @@ public class Base extends VerticalPanel {
 
         add(headerBar);
         add(mainPanel);
-        if ((tokenOnLoad == null) || tokenOnLoad.equals("") || tokenOnLoad.trim().equals("")) {
+        
             setPage("home");
-        } else {
-            setPage(tokenOnLoad);
-        }
+       
 
-        Footer footer = new Footer();
+        FooterBar footer = new FooterBar();
         add(footer);
     }
 
     private void setPage(String token) {
         mainPanel.clear();
-        if (token.equals("home")) {
 
+        if((token==null)||token.equals("")||token.trim().equals("")||token.trim().equals("home")){
+            
             Logo logo = new Logo();
             logo.setStyleName("Base-logo");
 
