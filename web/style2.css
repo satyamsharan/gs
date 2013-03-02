@@ -9,4 +9,12 @@
 root { 
     display: block;
 }
+.Footer-link a {
+    padding: 15px;
+    text-decoration: none;
+
+    color: #444444;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;}
 

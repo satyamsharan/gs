@@ -29,8 +29,12 @@ table,tbody,tr,td{
     margin-left: auto;
     margin-right: auto;
     width: 960px;
-    height: 1000px;
     border: none;
+}
+.Base-mainPanel {
+    margin-top: 15px;
+    width:960px;
+    border:1px solid;
 }
 
 .HeaderBar{

@@ -16,8 +16,8 @@ public class Footer extends HorizontalPanel {
     public Footer() {
         Hyperlink contactUs = new Hyperlink("Contact Us", "contact");
         Hyperlink copyright = new Hyperlink("Copyright", "copyright");
-        contactUs.setStyleName("Footer-contactUs");
-        copyright.setStyleName("Footer-copyright");
+        contactUs.setStyleName("Footer-link");
+        copyright.setStyleName("Footer-link");
         add(contactUs);
         add(copyright);
     }
