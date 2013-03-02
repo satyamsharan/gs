@@ -88,3 +88,20 @@ table,tbody,tr,td{
     box-shadow: 5px 5px 4px #888888;
     opacity: 1;
 }
+
+
+
+
+.Base-slider{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.Slider-slidingFrame{
+    width: 405px;
+    height: 255px;
+
+    background: transparent;
+    border: none;
+
+}

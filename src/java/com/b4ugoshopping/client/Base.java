@@ -45,8 +45,17 @@ public class Base extends VerticalPanel{
     
     
     private void setPage(String token){
+        
+        
+        
+        
+        
+        
+        
+        
         if(token.equals("home") ) {
             Slider slider = new Slider();
+            slider.setStyleName("Base-slider");
             add(slider);
         }
     }

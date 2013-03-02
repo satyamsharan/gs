@@ -29,7 +29,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 body {
 	line-height:1;
 	color:black;
-	background:white;
+	background:transparent;
 }
 table {
 	border-collapse:separate;
@@ -106,7 +106,4 @@ display:none;
 /*====================*/
 .clear {
 	clear:both;
-}
-.Slider-slidingFrame{
-    
 }
