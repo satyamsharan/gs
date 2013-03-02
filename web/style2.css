@@ -6,15 +6,20 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
-}
 .Footer-link a {
     padding: 15px;
     text-decoration: none;
-
     color: #444444;
     margin-left: 10px;
     margin-right: 10px;
-    cursor: pointer;}
+    cursor: pointer;
+}
 
+.FooterBar{
+    position: absolute;
+    vertical-align: bottom;
+    width: 960px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 4px #888888;
+    padding: 8px;
+}

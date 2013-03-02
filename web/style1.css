@@ -30,11 +30,14 @@ table,tbody,tr,td{
     margin-right: auto;
     width: 960px;
     border: none;
+    background-image: url('images/border.png');
+    background-repeat: repeat-y;
+        
 }
 .Base-mainPanel {
     margin-top: 15px;
     width:960px;
-    border:1px solid;
+    height: 900px;
 }
 
 .HeaderBar{
