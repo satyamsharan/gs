@@ -6,20 +6,30 @@
         Purpose of the stylesheet follows.
 */
 
-.Footer-link a {
-    padding: 15px;
+.FooterBar-link a {
+    margin: 15px;
     text-decoration: none;
-    color: #444444;
+    color: #ffffff;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
+}
+.FooterBar-link a:hover {
+    text-decoration: underline;
 }
 
 .FooterBar{
     position: absolute;
     vertical-align: bottom;
     width: 960px;
-    background-color: #ffffff;
+    background-color: #0072C6;
     box-shadow: 5px 5px 4px #888888;
     padding: 8px;
+    opacity: .8;
+}
+
+
+.FooterBar-hp{
+    margin-right: auto;
+    margin-left: auto;
 }
