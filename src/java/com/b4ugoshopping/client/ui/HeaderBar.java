@@ -10,9 +10,7 @@ import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HorizontalPanel;
 import com.google.gwt.user.client.ui.Hyperlink;
-import com.google.gwt.user.client.ui.ListBox;
-import com.google.gwt.user.client.ui.MultiWordSuggestOracle;
-import com.google.gwt.user.client.ui.SuggestBox;
+import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 /**
@@ -20,6 +18,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  * @author Satyam Sharan<satyam.sharan@hotmail.com>
  */
 public class HeaderBar extends VerticalPanel {
+DialogBox dialog = new DialogBox();
 
     public HeaderBar() {
         setStyleName("HeaderBar");
@@ -46,11 +45,11 @@ public class HeaderBar extends VerticalPanel {
 
         add(hp);
 
-        city.addClickHandler(new ClickHandler() {
-            @Override
-            public void onClick(ClickEvent event) {
-                final DialogBox dialog = new DialogBox();
-                dialog.setStyleName("HeaderBar-dialog");
+        
+        VerticalPanel vp = new VerticalPanel();
+                
+                vp.add(new Label("Inside"));
+
                 Button closeButton = new Button(
                         "Cancel", new ClickHandler() {
                             @Override
@@ -58,14 +57,21 @@ public class HeaderBar extends VerticalPanel {
                         dialog.hide();
                     }
                 });
-
-                dialog.add(closeButton);
-                dialog.center();
-                dialog.setAnimationEnabled(true);
+                vp.add(closeButton);
                 dialog.setGlassEnabled(true);
-                dialog.setGlassStyleName("glassStyle");
+                dialog.setAnimationEnabled(true);
+                dialog.setGlassStyleName("HeaderBar-glassStyle");
+                dialog.setStyleName("HeaderBar-dialog");
                 dialog.setSize("300px", "150px");
-                dialog.setVisible(true);
+                dialog.add(vp);
+                
+                
+        city.addClickHandler(new ClickHandler() {
+            @Override
+            public void onClick(ClickEvent event) {
+
+                
+                dialog.center();
                 dialog.show();
             }
         });
