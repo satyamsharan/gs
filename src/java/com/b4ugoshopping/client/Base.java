@@ -4,7 +4,10 @@
  */
 package com.b4ugoshopping.client;
 
-import com.google.gwt.user.client.ui.Label;
+import com.b4ugoshopping.client.ui.HeaderBar;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
+import com.google.gwt.event.logical.shared.ValueChangeHandler;
+import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 /**
@@ -14,9 +17,33 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 public class Base extends VerticalPanel{
 
     void init() {
-        for(int i=0;i<100;i++){
-            add(new Label("Hi "+i));
+        
+        History.addValueChangeHandler(new ValueChangeHandler<String>() {
+
+            @Override
+            public void onValueChange(ValueChangeEvent<String> event) {
+                setPage(event.getValue());
+            }
+        });
+        
+        String tokenOnLoad=History.getToken();
+        
+        if((tokenOnLoad==null)||tokenOnLoad.equals("")||tokenOnLoad.trim().equals("")){
+            setPage("home");
+        }else{
+            setPage(tokenOnLoad);
         }
+        
+        HeaderBar headerBar = new HeaderBar();
+        add(headerBar);
+        
+        setBorderWidth(1);
+        setCellWidth(headerBar, "100%");
+    }
+    
+    
+    private void setPage(String token){
+        
     }
     
 }
