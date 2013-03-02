@@ -17,11 +17,16 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 public class Logo extends VerticalPanel {
 
     public Logo() {
+        setStyleName("Logo");
+        
+        VerticalPanel vp = new VerticalPanel();
+        vp.setStyleName("Logo-vp");
+        
         Image img = new Image("images/logo.png");
         img.setStyleName("Logo-img");
         img.setTitle("www.b4ugoshopping.com");
-        add(img);
-        
+        vp.add(img);
+        add(vp);
         img.addClickHandler(new ClickHandler() {
 
             @Override

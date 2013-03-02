@@ -90,7 +90,15 @@ table,tbody,tr,td{
     box-shadow: 15px 15px 12px #666666;
     opacity: .9;
 }
+.Base-logo{
+    border-bottom: #0072C6 solid 2px;
+    width: 920px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+.Logo-vp{
+}
 .Logo-img{
     cursor: pointer;
 }

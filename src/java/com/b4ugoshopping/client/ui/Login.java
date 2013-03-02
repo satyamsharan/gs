@@ -16,9 +16,9 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  *
  * @author manu
  */
-public class login extends VerticalPanel {
+public class Login extends VerticalPanel {
 
-    public login() {
+    public Login() {
         SuggestBox loginBox = new SuggestBox();
         PasswordTextBox passBox = new PasswordTextBox();
 
