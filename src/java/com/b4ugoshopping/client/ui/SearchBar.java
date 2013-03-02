@@ -25,11 +25,11 @@ public class SearchBar extends VerticalPanel {
         productBox = new SuggestBox();
         locationBox = new SuggestBox();
         searchButton = new Button("search");
-        
+
         add(productBox);
         add(locationBox);
         add(searchButton);
-        
+
         searchButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

@@ -11,12 +11,11 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  *
  * @author Satyam Sharan<satyam.sharan@hotmail.com>
  */
-public class Logo extends VerticalPanel{
+public class Logo extends VerticalPanel {
 
     public Logo() {
         Image img = new Image("images/logo.png");
         img.setStyleName("Logo-img");
         add(img);
     }
-    
 }

@@ -43,9 +43,9 @@ public class Base extends VerticalPanel {
 
         add(headerBar);
         add(mainPanel);
-        
-            setPage("home");
-       
+
+        setPage(tokenOnLoad);
+
 
         FooterBar footer = new FooterBar();
         add(footer);
@@ -54,8 +54,8 @@ public class Base extends VerticalPanel {
     private void setPage(String token) {
         mainPanel.clear();
 
-        if((token==null)||token.equals("")||token.trim().equals("")||token.trim().equals("home")){
-            
+        if ((token == null) || token.equals("") || token.trim().equals("") || token.trim().equals("home")) {
+
             Logo logo = new Logo();
             logo.setStyleName("Base-logo");
 
@@ -64,7 +64,7 @@ public class Base extends VerticalPanel {
 
             SearchBar searchbar = new SearchBar();
             searchbar.setStyleName("Base-searchbar");
-            
+
             mainPanel.add(logo);
             mainPanel.add(slider);
             mainPanel.add(searchbar);
