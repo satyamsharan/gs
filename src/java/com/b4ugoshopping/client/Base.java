@@ -7,6 +7,7 @@ package com.b4ugoshopping.client;
 import com.b4ugoshopping.client.ui.FooterBar;
 import com.b4ugoshopping.client.ui.HeaderBar;
 import com.b4ugoshopping.client.ui.Logo;
+import com.b4ugoshopping.client.ui.SearchBar;
 import com.b4ugoshopping.client.ui.Slider;
 import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.event.logical.shared.ValueChangeHandler;
@@ -36,6 +37,7 @@ public class Base extends VerticalPanel {
 
         mainPanel = new VerticalPanel();
         HeaderBar headerBar = new HeaderBar();
+
         Logo logo = new Logo();
         logo.setStyleName("Base-logo");
 
@@ -45,6 +47,7 @@ public class Base extends VerticalPanel {
         add(headerBar);
         add(logo);
         add(mainPanel);
+
         setPage(tokenOnLoad);
 
 
@@ -54,21 +57,27 @@ public class Base extends VerticalPanel {
 
     private void setPage(String token) {
         mainPanel.clear();
+
+
         if ((token == null) || token.equals("") || token.trim().equals("") || token.trim().equals("home")) {
-
-
-
 
             Slider slider = new Slider();
             slider.setStyleName("Base-slider");
 
+            SearchBar searchbar = new SearchBar();
+            searchbar.setStyleName("Base-searchbar");
+
+            mainPanel.add(searchbar);
             mainPanel.add(slider);
+            
+
         } else if (token.equals("contact")) {
             Frame contactFrame = new Frame("pages/Contact Us.html");
             mainPanel.add(contactFrame);
         } else if (token.equals("copyright")) {
             Frame copyrightFrame = new Frame("pages/Copyright.html");
             mainPanel.add(copyrightFrame);
+        } else if (token.equals("searchresults")) {
         }
     }
 }

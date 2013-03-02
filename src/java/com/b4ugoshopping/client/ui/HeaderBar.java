@@ -19,6 +19,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 public class HeaderBar extends VerticalPanel {
 
     private DialogBox dialog;
+
     public HeaderBar() {
         setStyleName("HeaderBar");
 
@@ -30,14 +31,14 @@ public class HeaderBar extends VerticalPanel {
         Button city = new Button("New Delhi");
 
         dialog = new CityDialog();
-        
+
 
         hp.setStyleName("HeaderBar-hp");
         homeLink.setStyleName("HeaderBar-Link");
         postLink.setStyleName("HeaderBar-Link");
         city.setStyleName("HeaderBar-city");
         dialog.setStyleName("HeaderBar-dialog");
-        
+
 
         city.setTitle("Click to Change");
 
@@ -46,7 +47,7 @@ public class HeaderBar extends VerticalPanel {
         hp.add(city);
 
         add(hp);
-                
+
         city.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {

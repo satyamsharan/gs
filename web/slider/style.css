@@ -16,57 +16,57 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {
-	margin:0;
-	padding:0;
-	border:0;
-	outline:0;
-	font-weight:inherit;
-	font-style:inherit;
-	font-size:100%;
-	font-family:inherit;
-	vertical-align:baseline;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline;
 }
 body {
-	line-height:1;
-	color:black;
-	background:transparent;
+    line-height:1;
+    color:black;
+    background:transparent;
 }
 table {
-	border-collapse:separate;
-	border-spacing:0;
+    border-collapse:separate;
+    border-spacing:0;
 }
 caption, th, td {
-	text-align:left;
-	font-weight:normal;
+    text-align:left;
+    font-weight:normal;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content:"";
+    content:"";
 }
 blockquote, q {
-	quotes:"" "";
+    quotes:"" "";
 }
 /* HTML5 tags */
 header, section, footer,
 aside, nav, article, figure {
-	display: block;
+    display: block;
 }
 
 /*===================*/
 /*=== Main Styles ===*/
 /*===================*/
 body {
-	font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
-	color:#333;
+    font:14px/1.6 Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+    color:#333;
 }
 
 a, a:visited {
-	color:blue;
-	text-decoration:none;
+    color:blue;
+    text-decoration:none;
 }
 a:hover, a:active {
-	color:#000;
-	text-decoration:none;
+    color:#000;
+    text-decoration:none;
 }
 
 #dev7link {
@@ -83,11 +83,11 @@ a:hover, a:active {
 
 /*nishant code---testing*/
 .theme-default {
-	width:400px;
-	height:250px;
+    width:400px;
+    height:250px;
 }
 .nivo-controlNav {
-display:none;
+    display:none;
 }
 /*nishant code---testing*/
 
@@ -104,5 +104,5 @@ display:none;
 /*=== Other Styles ===*/
 /*====================*/
 .clear {
-	clear:both;
+    clear:both;
 }

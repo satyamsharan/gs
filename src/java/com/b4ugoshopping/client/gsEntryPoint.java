@@ -26,11 +26,10 @@ public class gsEntryPoint implements EntryPoint {
      */
     @Override
     public void onModuleLoad() {
-        
+
         Base base = new Base();
         base.init();
-        
+
         RootPanel.get("baseDiv").add(base);
     }
-    
 }

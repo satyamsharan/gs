@@ -28,8 +28,9 @@
     opacity: .8;
 }
 
+.Base-searchbar{
+    margin: auto auto;
+}
+.Base-searchbar input {
 
-.FooterBar-hp{
-    margin-right: auto;
-    margin-left: auto;
 }

@@ -8,34 +8,31 @@ import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.user.client.History;
 import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.SuggestBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 /**
  *
- * @author Satyam Sharan<satyam.sharan@hotmail.com>
+ * @author manu
  */
-public class SearchBar extends VerticalPanel {
+public class login extends VerticalPanel {
 
-    SuggestBox productBox;
-    SuggestBox locationBox;
-    Button searchButton;
+    public login() {
+        SuggestBox loginBox = new SuggestBox();
+        PasswordTextBox passBox = new PasswordTextBox();
 
-    public SearchBar() {
-        productBox = new SuggestBox();
-        locationBox = new SuggestBox();
-        searchButton = new Button("search");
+        Button loginButton = new Button("login");
 
-        add(productBox);
-        add(locationBox);
-        add(searchButton);
+        add(loginBox);
+        add(passBox);
+        add(loginButton);
 
-        searchButton.addClickHandler(new ClickHandler() {
+        loginButton.addClickHandler(new ClickHandler() {
             @Override
             public void onClick(ClickEvent event) {
-                History.newItem("searchresults", true);
+                History.newItem("login");
             }
         });
-
     }
 }

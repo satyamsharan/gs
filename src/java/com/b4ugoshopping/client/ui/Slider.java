@@ -12,13 +12,12 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  *
  * @author manu
  */
-public class Slider extends VerticalPanel{
+public class Slider extends VerticalPanel {
 
     public Slider() {
         Frame slidingFrame = new Frame("slider/show.html?id=" + Random.nextInt(1000));
         slidingFrame.setStyleName("Slider-slidingFrame");
         add(slidingFrame);
-        
+
     }
-    
 }
