@@ -33,7 +33,7 @@ public class CityDialog extends DialogBox {
         ListBox cityList = new ListBox();
 
         for (int i = 0; i < 10; i++) {
-            cityList.setItemText(i, "City " + i);
+            cityList.addItem("City " + i);
         }
 
         label.setStyleName("CityDialog-label");

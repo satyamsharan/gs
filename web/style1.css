@@ -96,7 +96,6 @@ table,tbody,tr,td{
     padding: 0px 0px 0px 0px;
     width: 30px;
     height: 30px;
-    float: right;
     background: url('images/close.png');
     cursor: pointer;
 }
@@ -109,7 +108,6 @@ table,tbody,tr,td{
 .Slider-slidingFrame{
     width: 405px;
     height: 255px;
-
     overflow-y: hidden;
     background: transparent;
     border: none;
