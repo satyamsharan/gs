@@ -36,6 +36,9 @@ public class Base extends VerticalPanel{
         
         HeaderBar headerBar = new HeaderBar();
         add(headerBar);
+        
+        setBorderWidth(1);
+        setCellWidth(headerBar, "100%");
     }
     
     
